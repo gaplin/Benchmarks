@@ -15,6 +15,30 @@ public static class Strings
         }
         return nextCandidate;
     }
+
+    public static string NextNameWithStringAndSort(string candidate, List<string> takenNames)
+    {
+        takenNames.Sort();
+        var pos = takenNames.IndexOf(candidate);
+        if(pos == -1)
+        {
+            return candidate;
+        }
+        int suffix = 1;
+        pos++;
+        while(pos < takenNames.Count)
+        {
+            var currentCandidate = candidate + suffix;
+            if (!takenNames[pos].Equals(currentCandidate, StringComparison.Ordinal))
+            {
+                return currentCandidate;
+            }
+            ++suffix;
+            ++pos;
+        }
+        return candidate + suffix;
+    }
+
     public static string NextNameWithStringAndHashset(string candidate, List<string> takenNames)
     {
         var hashes = takenNames.ToHashSet();

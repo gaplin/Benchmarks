@@ -34,6 +34,12 @@ public class Benchmarks
     }
 
     [Benchmark]
+    public void StringSortTest()
+    {
+        var result = Strings.NextNameWithStringAndSort(Candidate, _takenNames);
+    }
+
+    [Benchmark]
     public void StringHashTest()
     {
         var result = Strings.NextNameWithStringAndHashset(Candidate, _takenNames);
