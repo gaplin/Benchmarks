@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -10,4 +10,5 @@
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.8" />
   </ItemGroup>
+
 </Project>
