@@ -1,2 +1,2 @@
 # Benchmarks
-Playground for benchmarking stuff
+Playground for benchmarking .NET stuff
