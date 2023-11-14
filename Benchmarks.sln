@@ -13,7 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaVsLocalFunction", "La
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Virtual", "Virtual\Virtual.csproj", "{71011882-18E8-4D2F-9E83-E605635FF2B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iteration", "Iteration\Iteration.csproj", "{B4818F9F-977F-4B16-A621-725868CCFE4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iteration", "Iteration\Iteration.csproj", "{B4818F9F-977F-4B16-A621-725868CCFE4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D0FBCD1-DAAD-4C20-946B-BE51C7682274}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
