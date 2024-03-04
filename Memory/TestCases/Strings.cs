@@ -7,7 +7,7 @@ public static class Strings
         var nextCandidate = candidate;
         for (int i = 1; i <= takenNames.Count; ++i)
         {
-            if(!takenNames.Contains(nextCandidate))
+            if (!takenNames.Contains(nextCandidate))
             {
                 return nextCandidate;
             }
@@ -20,13 +20,13 @@ public static class Strings
     {
         takenNames.Sort();
         var pos = takenNames.IndexOf(candidate);
-        if(pos == -1)
+        if (pos == -1)
         {
             return candidate;
         }
         int suffix = 1;
         pos++;
-        while(pos < takenNames.Count)
+        while (pos < takenNames.Count)
         {
             var currentCandidate = candidate + suffix;
             if (!takenNames[pos].Equals(currentCandidate, StringComparison.Ordinal))
@@ -58,7 +58,7 @@ public static class Strings
     {
         var maximumNumberOfDigits = 0;
         var listCount = takenNames.Count;
-        while(listCount > 0)
+        while (listCount > 0)
         {
             maximumNumberOfDigits++;
             listCount /= 10;
@@ -69,18 +69,18 @@ public static class Strings
         candidate.CopyTo(nextCandidate);
         var currentCandidateLength = candidate.Length;
         int digitPosition = -1;
-        for(int i = 1; i <= takenNames.Count; ++i)
+        for (int i = 1; i <= takenNames.Count; ++i)
         {
             var contain = false;
-            for(int j = 0; j < takenNames.Count; ++j)
+            for (int j = 0; j < takenNames.Count; ++j)
             {
                 if (takenNames[j].AsSpan().Equals(nextCandidate[..currentCandidateLength], StringComparison.Ordinal))
                 {
                     contain = true;
                     break;
                 }
-            } 
-            if(!contain)
+            }
+            if (!contain)
             {
                 return nextCandidate[..currentCandidateLength].ToString();
             }

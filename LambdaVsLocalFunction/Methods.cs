@@ -21,7 +21,6 @@ public static class Methods
             .Where(Condition1)
             .Sum();
 
-
         static bool Condition15(int x) => x % 15 == 0;
         static bool Condition5(int x) => x % 5 == 0;
         static bool Condition3(int x) => x % 3 == 0;

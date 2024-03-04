@@ -13,9 +13,9 @@ public class Benchmarks
     [Params(20000)]
     public int B { get; set; }
 
-    private ITestAdder _itestAdder;
-    private ATestAdder _atestAdder;
-    private TestAdder _testAdder;
+    private ITestAdder _itestAdder = default!;
+    private ATestAdder _atestAdder = default!;
+    private TestAdder _testAdder = default!;
 
     [GlobalSetup]
     public void Setup()
@@ -23,7 +23,6 @@ public class Benchmarks
         _itestAdder = new TestAdderI();
         _atestAdder = new TestAdderA();
         _testAdder = new TestAdder();
-
     }
 
     [Benchmark(Baseline = true)]
@@ -56,6 +55,4 @@ public class Benchmarks
     public static int Add(ITestAdder adder, int a, int b) => adder.Add(a, b);
     public static int Add(ATestAdder adder, int a, int b) => adder.Add(a, b);
     public static int Add(TestAdder adder, int a, int b) => adder.Add(a, b);
-
-
 }

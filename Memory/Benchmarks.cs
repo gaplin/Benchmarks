@@ -12,42 +12,43 @@ public class Benchmarks
     [Params(20000)]
     public int TakenNamesLastNumber { get; set; }
 
-    private List<string> _takenNames = default!;
+    private IEnumerable<string> _takenNames = default!;
 
     [GlobalSetup]
     public void Setup()
     {
-        _takenNames = new()
-        {
+        List<string>? takenNames =
+        [
             Candidate
-        };
+        ];
         for (int i = 1; i <= TakenNamesLastNumber; ++i)
         {
-            _takenNames.Add("Candidate" + i);
+            takenNames.Add("Candidate" + i);
         }
+        _takenNames = takenNames;
     }
 
     [Benchmark(Baseline = true)]
     public void StringTest()
     {
-        var result = Strings.NextNameWithString(Candidate, _takenNames);
+        var result = Strings.NextNameWithString(Candidate, _takenNames.ToList());
     }
 
     [Benchmark]
     public void StringSortTest()
     {
-        var result = Strings.NextNameWithStringAndSort(Candidate, _takenNames);
+        var result = Strings.NextNameWithStringAndSort(Candidate, _takenNames.ToList());
     }
 
     [Benchmark]
     public void StringHashTest()
     {
-        var result = Strings.NextNameWithStringAndHashset(Candidate, _takenNames);
+        var result = Strings.NextNameWithStringAndHashset(Candidate, _takenNames.ToList());
     }
 
     [Benchmark]
     public void SpanTest()
     {
-        var result = Strings.NextNameWithSpan(Candidate, _takenNames);
+        var result = Strings.NextNameWithSpan(Candidate, _takenNames.ToList());
     }
 }

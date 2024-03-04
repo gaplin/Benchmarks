@@ -16,7 +16,7 @@ public class Benchmarks
         {
             for (int i = 0; i < length; ++i)
             {
-                chars[i] = (char) ('a' + i % 26);
+                chars[i] = (char)('a' + i % 26);
             }
         });
     }
