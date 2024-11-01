@@ -7,7 +7,7 @@ public class Benchmarks
 {
     [Params(100, 1000000)]
     public int StrLength { get; set; }
-    private string _str { get; set; } = default!;
+    private string _str = default!;
 
     [GlobalSetup]
     public void Setup()
