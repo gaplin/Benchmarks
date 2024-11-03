@@ -8,17 +8,29 @@ namespace ListOpsVsLinq;
 [SimpleJob(RuntimeMoniker.Net90)]
 public class Benchmarks
 {
-    private readonly List<int> _ints = [.. Enumerable.Range(0, 1_000_000)];
+    private List<int> _ints = null!;
+
+    [Params(1_000, 1_000_000)]
+    public int MaxElem { get; set; }
+    private int _toFind;
+
+
+    [GlobalSetup] 
+    public void Setup()
+    {
+        _ints = [.. Enumerable.Range(1, MaxElem)];
+        _toFind = MaxElem / 2;
+    }
 
     [Benchmark(Baseline = true)]
     public int? Find()
     {
-        return _ints.Find(x => x == 500_000);
+        return _ints.Find(x => x == _toFind);
     }
 
     [Benchmark]
     public int? FirstOrDefault()
     {
-        return _ints.FirstOrDefault(x => x == 500_000);
+        return _ints.FirstOrDefault(x => x == _toFind);
     }
 }
