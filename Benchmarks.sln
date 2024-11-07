@@ -29,9 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableToList", "Enumera
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructVsClassArrays", "StructVsClassArrays\StructVsClassArrays.csproj", "{5F78600C-3A30-41E1-B74B-7DB95555411C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractVsStructUnions", "AbstractVsStructUnions\AbstractVsStructUnions.csproj", "{F58828BA-086A-4B47-B438-E636ED314811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractVsStructUnions", "AbstractVsStructUnions\AbstractVsStructUnions.csproj", "{F58828BA-086A-4B47-B438-E636ED314811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListOpsVsLinq", "ListOpsVsLinq\ListOpsVsLinq.csproj", "{B6975841-7D70-421D-934F-2077092EEA35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListOpsVsLinq", "ListOpsVsLinq\ListOpsVsLinq.csproj", "{B6975841-7D70-421D-934F-2077092EEA35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordWith", "RecordWith\RecordWith.csproj", "{ED210611-E31C-4DF4-BDB4-23A6AA455CFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{B6975841-7D70-421D-934F-2077092EEA35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6975841-7D70-421D-934F-2077092EEA35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6975841-7D70-421D-934F-2077092EEA35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED210611-E31C-4DF4-BDB4-23A6AA455CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED210611-E31C-4DF4-BDB4-23A6AA455CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED210611-E31C-4DF4-BDB4-23A6AA455CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED210611-E31C-4DF4-BDB4-23A6AA455CFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
