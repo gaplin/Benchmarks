@@ -3,4 +3,4 @@ using SerializationComparison;
 
 BenchmarkRunner.Run<Benchmarks>();
 
-Console.WriteLine("Third");
+Console.WriteLine("First");
