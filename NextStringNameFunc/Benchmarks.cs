@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
-using Memory.TestCases;
+using NextStringNameFunc.TestCases;
 
-namespace Memory;
+namespace NextStringNameFunc;
 
 [MemoryDiagnoser(false)]
 public class Benchmarks
@@ -12,7 +12,7 @@ public class Benchmarks
     [Params(20000)]
     public int TakenNamesLastNumber { get; set; }
 
-    private IEnumerable<string> _takenNames = default!;
+    private List<string> _takenNames = default!;
 
     [GlobalSetup]
     public void Setup()
@@ -23,32 +23,26 @@ public class Benchmarks
         ];
         for (int i = 1; i <= TakenNamesLastNumber; ++i)
         {
-            takenNames.Add("Candidate" + i);
+            takenNames.Add(Candidate + i);
         }
         _takenNames = takenNames;
     }
 
     [Benchmark(Baseline = true)]
-    public void StringTest()
+    public string StringTest()
     {
-        var result = Strings.NextNameWithString(Candidate, _takenNames.ToList());
+        return Strings.NextNameWithString(Candidate, _takenNames);
     }
 
     [Benchmark]
-    public void StringSortTest()
+    public string StringHashTest()
     {
-        var result = Strings.NextNameWithStringAndSort(Candidate, _takenNames.ToList());
+        return Strings.NextNameWithStringAndHashset(Candidate, _takenNames);
     }
 
     [Benchmark]
-    public void StringHashTest()
+    public string SpanTest()
     {
-        var result = Strings.NextNameWithStringAndHashset(Candidate, _takenNames.ToList());
-    }
-
-    [Benchmark]
-    public void SpanTest()
-    {
-        var result = Strings.NextNameWithSpan(Candidate, _takenNames.ToList());
+        return Strings.NextNameWithSpan(Candidate, _takenNames);
     }
 }

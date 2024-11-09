@@ -1,4 +1,4 @@
 ﻿using BenchmarkDotNet.Running;
-using Memory;
+using NextStringNameFunc;
 
 BenchmarkRunner.Run<Benchmarks>();

@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forwading", "Forwarding\For
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async", "Async\Async.csproj", "{15615C7E-D282-4168-A608-1AF7330136D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memory", "Memory\Memory.csproj", "{1269B47E-6223-4476-A1D5-1EBB50F13E2F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaVsLocalFunction", "LambdaVsLocalFunction\LambdaVsLocalFunction.csproj", "{9FBA4A17-5C38-4A32-AF79-78C8F620F7FD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Virtual", "Virtual\Virtual.csproj", "{71011882-18E8-4D2F-9E83-E605635FF2B2}"
@@ -35,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListOpsVsLinq", "ListOpsVsL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordWith", "RecordWith\RecordWith.csproj", "{ED210611-E31C-4DF4-BDB4-23A6AA455CFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationComparison", "SerializationComparison\SerializationComparison.csproj", "{80FBFECF-23CD-467A-9133-A9C23F2B6ADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerializationComparison", "SerializationComparison\SerializationComparison.csproj", "{80FBFECF-23CD-467A-9133-A9C23F2B6ADA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NextStringNameFunc", "NextStringNameFunc\NextStringNameFunc.csproj", "{572180AB-8030-42A1-B1ED-9A830D5125D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,10 +51,6 @@ Global
 		{15615C7E-D282-4168-A608-1AF7330136D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15615C7E-D282-4168-A608-1AF7330136D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15615C7E-D282-4168-A608-1AF7330136D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1269B47E-6223-4476-A1D5-1EBB50F13E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1269B47E-6223-4476-A1D5-1EBB50F13E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1269B47E-6223-4476-A1D5-1EBB50F13E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1269B47E-6223-4476-A1D5-1EBB50F13E2F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9FBA4A17-5C38-4A32-AF79-78C8F620F7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9FBA4A17-5C38-4A32-AF79-78C8F620F7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FBA4A17-5C38-4A32-AF79-78C8F620F7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -95,6 +91,10 @@ Global
 		{80FBFECF-23CD-467A-9133-A9C23F2B6ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80FBFECF-23CD-467A-9133-A9C23F2B6ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80FBFECF-23CD-467A-9133-A9C23F2B6ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572180AB-8030-42A1-B1ED-9A830D5125D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572180AB-8030-42A1-B1ED-9A830D5125D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572180AB-8030-42A1-B1ED-9A830D5125D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572180AB-8030-42A1-B1ED-9A830D5125D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
