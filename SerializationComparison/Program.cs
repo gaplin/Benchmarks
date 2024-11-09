@@ -4,3 +4,4 @@ using SerializationComparison;
 BenchmarkRunner.Run<Benchmarks>();
 
 Console.WriteLine("Five");
+Console.WriteLine("Six");
