@@ -3,4 +3,4 @@ using SerializationComparison;
 
 BenchmarkRunner.Run<Benchmarks>();
 
-Console.WriteLine("Rewrite");
+Console.WriteLine("Five");
