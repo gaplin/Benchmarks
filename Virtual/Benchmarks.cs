@@ -5,17 +5,14 @@ namespace Virtual;
 [MemoryDiagnoser(false)]
 public class Benchmarks
 {
-    [Params(1000)]
+    [Params(1_000_000)]
     public int Iteration { get; set; }
-
-    [Params(100000)]
-    public int A { get; set; }
-    [Params(20000)]
-    public int B { get; set; }
 
     private ITestAdder _itestAdder = default!;
     private ATestAdder _atestAdder = default!;
     private TestAdder _testAdder = default!;
+    private readonly Random _random = new(500);
+    private List<(int first, int second)> _items = [];
 
     [GlobalSetup]
     public void Setup()
@@ -23,33 +20,43 @@ public class Benchmarks
         _itestAdder = new TestAdderI();
         _atestAdder = new TestAdderA();
         _testAdder = new TestAdder();
+        for (int i = 0; i < Iteration; ++i)
+        {
+            _items.Add((_random.Next() % 1000, _random.Next() % 1000));
+        }
     }
 
     [Benchmark(Baseline = true)]
-    public void TestAdderDirectly()
+    public long TestAdderDirectly()
     {
-        for (int i = 0; i < Iteration; i++)
+        long result = 0;
+        foreach ((int a, int b) in _items)
         {
-            var result = Add(_testAdder, A, B);
+            result += Add(_testAdder, a, b);
         }
+        return result;
     }
 
     [Benchmark]
-    public void TestAdderInterface()
+    public long TestAdderInterface()
     {
-        for (int i = 0; i < Iteration; i++)
+        long result = 0;
+        foreach ((int a, int b) in _items)
         {
-            var result = Add(_itestAdder, A, B);
+            result += Add(_itestAdder, a, b);
         }
+        return result;
     }
 
     [Benchmark]
-    public void TestAdderAbstract()
+    public long TestAdderAbstract()
     {
-        for (int i = 0; i < Iteration; i++)
+        long result = 0;
+        foreach ((int a, int b) in _items)
         {
-            var result = Add(_atestAdder, A, B);
+            result += Add(_atestAdder, a, b);
         }
+        return result;
     }
 
     public static int Add(ITestAdder adder, int a, int b) => adder.Add(a, b);
