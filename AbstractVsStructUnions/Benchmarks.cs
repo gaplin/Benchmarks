@@ -8,9 +8,9 @@ public class Benchmarks
     [Params(1_000, 1_000_000)]
     public int Iterations { get; set; }
 
-    private AbstractUnion<int, string, long> _abstrFirst;
-    private AbstractUnion<int, string, long> _abstrSecond;
-    private AbstractUnion<int, string, long> _abstrThird;
+    private AbstractUnion<int, string, long> _abstrFirst = default!;
+    private AbstractUnion<int, string, long> _abstrSecond = default!;
+    private AbstractUnion<int, string, long> _abstrThird = default!;
 
     private StructUnion<int, string, long> _strFirst;
     private StructUnion<int, string, long> _strSecond;

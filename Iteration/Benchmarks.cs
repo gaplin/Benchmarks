@@ -5,7 +5,7 @@ namespace Iteration;
 [MemoryDiagnoser(false)]
 public class Benchmarks
 {
-    [Params(100, 1000000)]
+    [Params(100, 1_000_000)]
     public int StrLength { get; set; }
     private string _str = default!;
 
@@ -22,33 +22,33 @@ public class Benchmarks
     }
 
     [Benchmark(Baseline = true)]
-    public void ForeachString()
+    public bool ForeachString()
     {
-        Funcs.ForeachString(_str);
+        return Funcs.ForeachString(_str);
     }
     [Benchmark]
-    public void ForString()
+    public bool ForString()
     {
-        Funcs.ForString(_str);
+        return Funcs.ForString(_str);
     }
     [Benchmark]
-    public void ForStringLengthOutside()
+    public bool ForStringLengthOutside()
     {
-        Funcs.ForStringLengthOutside(_str);
+        return Funcs.ForStringLengthOutside(_str);
     }
     [Benchmark]
-    public void ForeachSpan()
+    public bool ForeachSpan()
     {
-        Funcs.ForeachSpan(_str);
+        return Funcs.ForeachSpan(_str);
     }
     [Benchmark]
-    public void ForSpan()
+    public bool ForSpan()
     {
-        Funcs.ForSpan(_str);
+        return Funcs.ForSpan(_str);
     }
     [Benchmark]
-    public void ForSpanLengthOutside()
+    public bool ForSpanLengthOutside()
     {
-        Funcs.ForSpanLengthOutside(_str);
+        return Funcs.ForSpanLengthOutside(_str);
     }
 }

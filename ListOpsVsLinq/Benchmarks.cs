@@ -14,8 +14,7 @@ public class Benchmarks
     public int MaxElem { get; set; }
     private int _toFind;
 
-
-    [GlobalSetup] 
+    [GlobalSetup]
     public void Setup()
     {
         _ints = [.. Enumerable.Range(1, MaxElem)];

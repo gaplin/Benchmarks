@@ -9,7 +9,7 @@ public class Benchmarks
     [Params("FirstPropositionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnndddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddn")]
     public string Candidate { get; set; } = default!;
 
-    [Params(20000)]
+    [Params(20_000)]
     public int TakenNamesLastNumber { get; set; }
 
     private List<string> _takenNames = default!;

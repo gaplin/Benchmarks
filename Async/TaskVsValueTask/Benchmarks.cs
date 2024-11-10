@@ -6,50 +6,50 @@ namespace Async.TaskVsValueTask;
 public class Benchmarks
 {
     [Benchmark(Baseline = true)]
-    public async Task ValueTasksInt()
+    public async ValueTask<int> ValueTasksInt()
     {
-        var result = await ValueTaskDeepInt.F1();
+        return await ValueTaskDeepInt.F1();
     }
 
     [Benchmark]
-    public async Task TasksInt()
+    public async Task<int> TasksInt()
     {
-        var result = await TaskDeepInt.G1();
+        return await TaskDeepInt.G1();
     }
 
     [Benchmark]
-    public async Task ValueTasksAsyncInt()
+    public async ValueTask<int> ValueTasksAsyncInt()
     {
-        var result = await ValueTaskAsyncDeepInt.F1();
+        return await ValueTaskAsyncDeepInt.F1();
     }
 
     [Benchmark]
-    public async Task TasksAsyncInt()
+    public async Task<int> TasksAsyncInt()
     {
-        var result = await TaskAsyncDeepInt.G1();
+        return await TaskAsyncDeepInt.G1();
     }
 
     [Benchmark]
-    public async Task ValueTasksDummy()
+    public async Task<Dummy> ValueTasksDummy()
     {
-        var result = await ValueTaskDeepDummy.F1();
+        return await ValueTaskDeepDummy.F1();
     }
 
     [Benchmark]
-    public async Task TasksDummy()
+    public async Task<Dummy> TasksDummy()
     {
-        var result = await TaskDeepDummy.G1();
+        return await TaskDeepDummy.G1();
     }
 
     [Benchmark]
-    public async Task ValueTasksAsyncDummy()
+    public async Task<Dummy> ValueTasksAsyncDummy()
     {
-        var result = await ValueTaskAsyncDeepDummy.F1();
+        return await ValueTaskAsyncDeepDummy.F1();
     }
 
     [Benchmark]
-    public async Task TasksAsyncDummy()
+    public async Task<Dummy> TasksAsyncDummy()
     {
-        var result = await TaskAsyncDeepDummy.G1();
+        return await TaskAsyncDeepDummy.G1();
     }
 }

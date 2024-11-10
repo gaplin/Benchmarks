@@ -5,17 +5,11 @@ namespace Forwading;
 [MemoryDiagnoser(false)]
 public class Benchmarks
 {
-    [Params(10, 100, 1000)]
+    [Params(10, 100, 1_000)]
     public int Iterations { get; set; }
 
-    [Params(10, 100, 1000)]
+    [Params(10, 100, 1_000)]
     public int TaskSize { get; set; }
-
-    [GlobalSetup]
-    public void Setup()
-    {
-        // Do some stuff
-    }
 
     [Benchmark(Baseline = true)]
     public async Task AwaitStuff()

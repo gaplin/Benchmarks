@@ -11,35 +11,38 @@ public class Benchmarks
     public int Iterations { get; set; }
 
     [Benchmark(Baseline = true)]
-    public void AutoProp()
+    public long AutoProp()
     {
-        int tmp = 0;
+        long sum = 0;
         for (int i = 0; i < Iterations; ++i)
         {
             _instance.AutoProp = i;
-            tmp = _instance.AutoProp;
+            sum += _instance.AutoProp;
         }
+        return sum;
     }
 
     [Benchmark]
-    public void NoInliningProp()
+    public long NoInliningProp()
     {
-        int tmp = 0;
+        long sum = 0;
         for (int i = 0; i < Iterations; ++i)
         {
             _instance.NoInliningProp = i;
-            tmp = _instance.NoInliningProp;
+            sum += _instance.NoInliningProp;
         }
+        return sum;
     }
 
     [Benchmark]
-    public void Field()
+    public long Field()
     {
-        int tmp = 0;
+        long sum = 0;
         for (int i = 0; i < Iterations; ++i)
         {
             _instance.FieldValue = i;
-            tmp = _instance.FieldValue;
+            sum += _instance.FieldValue;
         }
+        return sum;
     }
 }

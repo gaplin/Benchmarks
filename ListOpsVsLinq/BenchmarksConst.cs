@@ -60,7 +60,6 @@ public static class LstExtensions
 
     public static TSource? FindWithElse<TSource>(this List<TSource> lst, Func<TSource, bool> predicate)
     {
-
         if (TryGetSpan(lst, out ReadOnlySpan<TSource> span))
         {
             foreach (TSource item in span)

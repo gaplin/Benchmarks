@@ -5,24 +5,17 @@ namespace LambdaVsLocalFunction;
 [MemoryDiagnoser(false)]
 public class Benchmarks
 {
-    private const int _iterations = 1_000;
-    private readonly List<int> _nums = Enumerable.Range(0, 30).ToList();
+    private readonly List<int> _nums = Enumerable.Range(1, 1_000_000).ToList();
 
     [Benchmark(Baseline = true)]
-    public void Lambda()
+    public long Lambda()
     {
-        for (int i = 0; i < _iterations; ++i)
-        {
-            Methods.LambdaSum(_nums);
-        }
+        return Methods.LambdaSum(_nums);
     }
 
     [Benchmark]
-    public void LocalFunction()
+    public long LocalFunction()
     {
-        for (int i = 0; i < _iterations; ++i)
-        {
-            Methods.LocalFunctionSum(_nums);
-        }
+        return Methods.LocalFunctionSum(_nums);
     }
 }
