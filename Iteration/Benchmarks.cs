@@ -3,6 +3,8 @@
 namespace Iteration;
 
 [MemoryDiagnoser(false)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
 public class Benchmarks
 {
     [Params(100, 1_000_000)]

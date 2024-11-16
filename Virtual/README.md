@@ -1,14 +1,18 @@
 ﻿# Results
 
-BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4391/23H2/2023Update/SunValley3)\
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4460/23H2/2023Update/SunValley3)\
 12th Gen Intel Core i7-12650H, 1 CPU, 16 logical and 10 physical cores\
-.NET SDK 9.0.100-rc.2.24474.11\
-  [Host]     : .NET 8.0.10 (8.0.1024.46610), X64 RyuJIT AVX2\
-  DefaultJob : .NET 8.0.10 (8.0.1024.46610), X64 RyuJIT AVX2
+.NET SDK 9.0.100\
+  [Host]   : .NET 8.0.11 (8.0.1124.51707), X64 RyuJIT AVX2\
+  .NET 8.0 : .NET 8.0.11 (8.0.1124.51707), X64 RyuJIT AVX2\
+  .NET 9.0 : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2
 
 
-| Method             | Iteration | Mean     | Error    | StdDev   | Ratio | RatioSD | Allocated | Alloc Ratio |
-|------------------- |---------- |---------:|---------:|---------:|------:|--------:|----------:|------------:|
-| TestAdderDirectly  | 1000000   | 633.0 us |  9.52 us | 14.25 us |  1.00 |    0.03 |         - |          NA |
-| TestAdderInterface | 1000000   | 742.2 us |  7.58 us |  6.33 us |  1.17 |    0.03 |         - |          NA |
-| TestAdderAbstract  | 1000000   | 749.1 us | 10.72 us | 10.02 us |  1.18 |    0.03 |         - |          NA |
+| Method             | Job      | Runtime  | Iteration | Mean     | Error    | StdDev   | Ratio | RatioSD | Allocated | Alloc Ratio |
+|------------------- |--------- |--------- |---------- |---------:|---------:|---------:|------:|--------:|----------:|------------:|
+| TestAdderDirectly  | .NET 8.0 | .NET 8.0 | 1000000   | 662.0 us | 12.93 us | 12.10 us |  1.03 |    0.02 |         - |          NA |
+| TestAdderInterface | .NET 8.0 | .NET 8.0 | 1000000   | 751.7 us | 14.42 us | 16.61 us |  1.17 |    0.03 |         - |          NA |
+| TestAdderAbstract  | .NET 8.0 | .NET 8.0 | 1000000   | 753.0 us | 13.19 us | 12.34 us |  1.17 |    0.02 |         - |          NA |
+| TestAdderDirectly  | .NET 9.0 | .NET 9.0 | 1000000   | 644.8 us | 10.43 us |  9.24 us |  1.00 |    0.02 |         - |          NA |
+| TestAdderInterface | .NET 9.0 | .NET 9.0 | 1000000   | 747.0 us | 13.90 us | 13.00 us |  1.16 |    0.03 |         - |          NA |
+| TestAdderAbstract  | .NET 9.0 | .NET 9.0 | 1000000   | 710.8 us | 14.19 us | 17.95 us |  1.10 |    0.03 |         - |          NA |

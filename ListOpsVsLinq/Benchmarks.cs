@@ -37,9 +37,9 @@ public class Benchmarks
     [Benchmark]
     public int? FindDirectly()
     {
-        foreach(int x in CollectionsMarshal.AsSpan(_ints))
+        foreach (int x in CollectionsMarshal.AsSpan(_ints))
         {
-            if(x == _toFind)
+            if (x == _toFind)
             {
                 return x;
             }

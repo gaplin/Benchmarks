@@ -6,6 +6,8 @@ namespace SerializationComparison;
 
 [MemoryDiagnoser(false)]
 [GroupBenchmarksBy(BenchmarkDotNet.Configs.BenchmarkLogicalGroupRule.ByCategory)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
 public class Benchmarks
 {
     private readonly List<A> _items = [];

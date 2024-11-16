@@ -3,9 +3,11 @@
 namespace AbstractVsStructUnions;
 
 [MemoryDiagnoser(false)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
 public class Benchmarks
 {
-    [Params(1_000, 1_000_000)]
+    [Params(1_000_000)]
     public int Iterations { get; set; }
 
     private AbstractUnion<int, string, long> _abstrFirst = default!;

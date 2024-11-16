@@ -3,6 +3,8 @@
 namespace Virtual;
 
 [MemoryDiagnoser(false)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
 public class Benchmarks
 {
     [Params(1_000_000)]

@@ -3,6 +3,8 @@
 namespace PropertiesVsFields;
 
 [MemoryDiagnoser(false)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
+[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
 public class Benchmarks
 {
     private readonly TestClass _instance = new();
