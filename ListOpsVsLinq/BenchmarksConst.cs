@@ -10,7 +10,7 @@ public class BenchmarksConst
 {
     private List<int> _ints = null!;
 
-    [Params(1_000)]
+    [Params(1_000_000)]
     public int MaxElem { get; set; }
     private int _toFind;
 
@@ -18,19 +18,19 @@ public class BenchmarksConst
     public void Setup()
     {
         _ints = [.. Enumerable.Range(1, MaxElem)];
-        _toFind = 500;
+        _toFind = MaxElem / 2;
     }
 
     [Benchmark(Baseline = true)]
     public int? FindWithoutElseConst()
     {
-        return _ints.FindWithoutElse(x => x == 500);
+        return _ints.FindWithoutElse(x => x == 500_000);
     }
 
     [Benchmark]
     public int? FindWithElseConst()
     {
-        return _ints.FindWithElse(x => x == 500);
+        return _ints.FindWithElse(x => x == 500_000);
     }
 
     [Benchmark]
