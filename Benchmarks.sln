@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerializationComparison", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NextStringNameFunc", "NextStringNameFunc\NextStringNameFunc.csproj", "{572180AB-8030-42A1-B1ED-9A830D5125D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyIteration", "CopyIteration\CopyIteration.csproj", "{86569284-3C0E-452E-925F-99B71118FCDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{572180AB-8030-42A1-B1ED-9A830D5125D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{572180AB-8030-42A1-B1ED-9A830D5125D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{572180AB-8030-42A1-B1ED-9A830D5125D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86569284-3C0E-452E-925F-99B71118FCDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86569284-3C0E-452E-925F-99B71118FCDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86569284-3C0E-452E-925F-99B71118FCDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86569284-3C0E-452E-925F-99B71118FCDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
