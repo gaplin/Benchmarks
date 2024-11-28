@@ -41,6 +41,12 @@ public class Benchmarks
     }
 
     [Benchmark]
+    public string StringHashTestNewLookup()
+    {
+        return Strings.NextNameWithStringAndHashsetWithNewLookup(Candidate, _takenNames);
+    }
+
+    [Benchmark]
     public string SpanTest()
     {
         return Strings.NextNameWithSpan(Candidate, _takenNames);
