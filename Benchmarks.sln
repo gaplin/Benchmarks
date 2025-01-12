@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NextStringNameFunc", "NextS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyIteration", "CopyIteration\CopyIteration.csproj", "{86569284-3C0E-452E-925F-99B71118FCDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMulJaggedVsMulti", "MatrixMulJaggedVsMulti\MatrixMulJaggedVsMulti.csproj", "{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,10 @@ Global
 		{86569284-3C0E-452E-925F-99B71118FCDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86569284-3C0E-452E-925F-99B71118FCDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86569284-3C0E-452E-925F-99B71118FCDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
