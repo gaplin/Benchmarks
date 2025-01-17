@@ -1,7 +1,5 @@
 ﻿# Results
 
-// * Summary *
-
 BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4460/23H2/2023Update/SunValley3)\
 12th Gen Intel Core i7-12650H, 1 CPU, 16 logical and 10 physical cores\
 .NET SDK 9.0.100\

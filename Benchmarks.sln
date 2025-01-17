@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyIteration", "CopyIterat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMulJaggedVsMulti", "MatrixMulJaggedVsMulti\MatrixMulJaggedVsMulti.csproj", "{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListArrayInit", "ListArrayInit\ListArrayInit.csproj", "{B4F73445-0958-4491-A530-85D1CED74913}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1BE22D7-94E6-4C6A-8935-6D4E03B756C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F73445-0958-4491-A530-85D1CED74913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F73445-0958-4491-A530-85D1CED74913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F73445-0958-4491-A530-85D1CED74913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F73445-0958-4491-A530-85D1CED74913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
