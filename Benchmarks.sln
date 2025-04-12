@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMulJaggedVsMulti", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListArrayInit", "ListArrayInit\ListArrayInit.csproj", "{B4F73445-0958-4491-A530-85D1CED74913}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListForeach", "ListForeach\ListForeach.csproj", "{2688E455-E07E-4750-BC54-829B2C4933C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{B4F73445-0958-4491-A530-85D1CED74913}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4F73445-0958-4491-A530-85D1CED74913}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4F73445-0958-4491-A530-85D1CED74913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2688E455-E07E-4750-BC54-829B2C4933C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2688E455-E07E-4750-BC54-829B2C4933C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2688E455-E07E-4750-BC54-829B2C4933C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2688E455-E07E-4750-BC54-829B2C4933C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
