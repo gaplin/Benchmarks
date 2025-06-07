@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListForeach", "ListForeach\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZlinqVsLinq", "ZlinqVsLinq\ZlinqVsLinq.csproj", "{BD85E135-8DD6-4F1A-864D-BB750BFEF457}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolymorphicJsonSerialization", "PolymorphicJsonSerialization\PolymorphicJsonSerialization.csproj", "{2937D358-1483-410A-8BCD-773F361CBF92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{BD85E135-8DD6-4F1A-864D-BB750BFEF457}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD85E135-8DD6-4F1A-864D-BB750BFEF457}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD85E135-8DD6-4F1A-864D-BB750BFEF457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2937D358-1483-410A-8BCD-773F361CBF92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2937D358-1483-410A-8BCD-773F361CBF92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2937D358-1483-410A-8BCD-773F361CBF92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2937D358-1483-410A-8BCD-773F361CBF92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
