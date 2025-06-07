@@ -21,7 +21,7 @@ public class Benchmarks
     {
         var odds = _ints.Where(x => x % 2 == 1);
         int count = 0;
-        foreach(var odd in odds)
+        foreach (var odd in odds)
         {
             ++count;
         }

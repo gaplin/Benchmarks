@@ -28,7 +28,7 @@ public class Benchmarks
             string item = $"\"{i}\":{i}";
             _topBuilder.Append(item);
             _botBuilder.Append(item);
-            if(i != NumberOfItems - 1)
+            if (i != NumberOfItems - 1)
             {
                 _topBuilder.Append(',');
                 _botBuilder.Append(',');
