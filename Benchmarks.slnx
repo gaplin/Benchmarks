@@ -1,0 +1,27 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="AbstractVsStructUnions/AbstractVsStructUnions.csproj" />
+  <Project Path="Async/Async.csproj" />
+  <Project Path="CopyIteration/CopyIteration.csproj" />
+  <Project Path="EnumerableToList/EnumerableToList.csproj" />
+  <Project Path="Forwarding/Forwading.csproj" />
+  <Project Path="Iteration/Iteration.csproj" />
+  <Project Path="LambdaVsLocalFunction/LambdaVsLocalFunction.csproj" />
+  <Project Path="ListArrayInit/ListArrayInit.csproj" />
+  <Project Path="ListForeach/ListForeach.csproj" />
+  <Project Path="ListOpsVsLinq/ListOpsVsLinq.csproj" />
+  <Project Path="MatrixMulJaggedVsMulti/MatrixMulJaggedVsMulti.csproj" />
+  <Project Path="NextStringNameFunc/NextStringNameFunc.csproj" />
+  <Project Path="PolymorphicJsonSerialization/PolymorphicJsonSerialization.csproj" />
+  <Project Path="PropertiesVsFields/PropertiesVsFields.csproj" />
+  <Project Path="RecordWith/RecordWith.csproj" />
+  <Project Path="SerializationComparison/SerializationComparison.csproj" />
+  <Project Path="StructVsClassArrays/StructVsClassArrays.csproj" />
+  <Project Path="Virtual/Virtual.csproj" />
+  <Project Path="ZlinqVsLinq/ZlinqVsLinq.csproj" />
+</Solution>
