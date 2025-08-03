@@ -13,6 +13,7 @@
   <Project Path="Forwarding/Forwading.csproj" />
   <Project Path="Iteration/Iteration.csproj" />
   <Project Path="LambdaVsLocalFunction/LambdaVsLocalFunction.csproj" />
+  <Project Path="LinqChaining/LinqChaining.csproj" Id="765c4b7a-fa6e-42a2-9d56-725504fc919e" />
   <Project Path="ListArrayInit/ListArrayInit.csproj" />
   <Project Path="ListForeach/ListForeach.csproj" />
   <Project Path="ListOpsVsLinq/ListOpsVsLinq.csproj" />
