@@ -8,6 +8,7 @@
   <Project Path="AbstractVsStructUnions/AbstractVsStructUnions.csproj" />
   <Project Path="Async/Async.csproj" />
   <Project Path="CopyIteration/CopyIteration.csproj" />
+  <Project Path="DynamicDispatch/DynamicDispatch.csproj" Id="8a6ecd39-d9e9-4c44-802b-011f3894e2e9" />
   <Project Path="EnumerableToList/EnumerableToList.csproj" />
   <Project Path="Forwarding/Forwading.csproj" />
   <Project Path="Iteration/Iteration.csproj" />
