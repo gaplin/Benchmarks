@@ -19,6 +19,7 @@
   <Project Path="ListOpsVsLinq/ListOpsVsLinq.csproj" />
   <Project Path="MatrixMulJaggedVsMulti/MatrixMulJaggedVsMulti.csproj" />
   <Project Path="NextStringNameFunc/NextStringNameFunc.csproj" />
+  <Project Path="PassingDelegatesVsObjects/PassingDelegatesVsObjects.csproj" Id="f6bff63d-4634-4a7e-8671-37de5ead7ace" />
   <Project Path="PolymorphicJsonSerialization/PolymorphicJsonSerialization.csproj" />
   <Project Path="PropertiesVsFields/PropertiesVsFields.csproj" />
   <Project Path="RecordWith/RecordWith.csproj" />
