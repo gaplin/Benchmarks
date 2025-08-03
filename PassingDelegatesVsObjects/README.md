@@ -5,9 +5,8 @@ BenchmarkDotNet v0.15.2, Windows 11 (10.0.26100.4652/24H2/2024Update/HudsonValle
 .NET SDK 9.0.302\
   [Host]     : .NET 9.0.7 (9.0.725.31616), X64 RyuJIT AVX2\
   DefaultJob : .NET 9.0.7 (9.0.725.31616), X64 RyuJIT AVX2\
-[NoInlining]
 
-
+[MethodImpl(MethodImplOptions.NoInlining)]
 | Method       | Iterations | Mean        | Error     | StdDev    | Ratio | RatioSD | Allocated | Alloc Ratio |
 |------------- |----------- |------------:|----------:|----------:|------:|--------:|----------:|------------:|
 | Interface    | 100        |    176.6 ns |   2.17 ns |   1.93 ns |  1.00 |    0.01 |         - |          NA |
@@ -19,8 +18,7 @@ BenchmarkDotNet v0.15.2, Windows 11 (10.0.26100.4652/24H2/2024Update/HudsonValle
 | Delegate     | 10000      | 23,120.3 ns | 407.57 ns | 381.24 ns |  1.30 |    0.04 |         - |          NA |
 
 
-[Inlining]
-
+[Default]
 | Method       | Iterations | Mean         | Error      | StdDev     | Ratio | RatioSD | Allocated | Alloc Ratio |
 |------------- |----------- |-------------:|-----------:|-----------:|------:|--------:|----------:|------------:|
 | Interface    | 100        |     59.89 ns |   1.169 ns |   0.912 ns |  1.00 |    0.02 |         - |          NA |
