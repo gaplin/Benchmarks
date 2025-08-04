@@ -24,6 +24,7 @@
   <Project Path="PropertiesVsFields/PropertiesVsFields.csproj" />
   <Project Path="RecordWith/RecordWith.csproj" />
   <Project Path="SerializationComparison/SerializationComparison.csproj" />
+  <Project Path="SortWithLookupVsProperty/SortWithLookupVsProperty.csproj" Id="74524c25-d7da-41af-b716-b332ebd70314" />
   <Project Path="StructVsClassArrays/StructVsClassArrays.csproj" />
   <Project Path="Virtual/Virtual.csproj" />
   <Project Path="ZlinqVsLinq/ZlinqVsLinq.csproj" />
