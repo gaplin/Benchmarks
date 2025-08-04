@@ -1,6 +1,7 @@
-﻿using BenchmarkDotNet.Attributes;
+﻿using Async.TaskVsValueTask;
+using BenchmarkDotNet.Attributes;
 
-namespace Async.TaskVsValueTask;
+namespace Async;
 
 [MemoryDiagnoser(false)]
 [SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
