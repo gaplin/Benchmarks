@@ -1,18 +1,14 @@
 ﻿# Results
 
-BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4460/23H2/2023Update/SunValley3)\
-12th Gen Intel Core i7-12650H, 1 CPU, 16 logical and 10 physical cores\
-.NET SDK 9.0.100\
-  [Host]   : .NET 8.0.11 (8.0.1124.51707), X64 RyuJIT AVX2\
-  .NET 8.0 : .NET 8.0.11 (8.0.1124.51707), X64 RyuJIT AVX2\
-  .NET 9.0 : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7462/25H2/2025Update/HudsonValley2)\
+AMD Ryzen 9 7945HX with Radeon Graphics 2.50GHz, 1 CPU, 32 logical and 16 physical cores\
+.NET SDK 10.0.101\
+  [Host]     : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4\
+  DefaultJob : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4
 
 
-| Method             | Job      | Runtime  | Iteration | Mean     | Error    | StdDev   | Ratio | RatioSD | Allocated | Alloc Ratio |
-|------------------- |--------- |--------- |---------- |---------:|---------:|---------:|------:|--------:|----------:|------------:|
-| TestAdderDirectly  | .NET 8.0 | .NET 8.0 | 1000000   | 662.0 us | 12.93 us | 12.10 us |  1.03 |    0.02 |         - |          NA |
-| TestAdderInterface | .NET 8.0 | .NET 8.0 | 1000000   | 751.7 us | 14.42 us | 16.61 us |  1.17 |    0.03 |         - |          NA |
-| TestAdderAbstract  | .NET 8.0 | .NET 8.0 | 1000000   | 753.0 us | 13.19 us | 12.34 us |  1.17 |    0.02 |         - |          NA |
-| TestAdderDirectly  | .NET 9.0 | .NET 9.0 | 1000000   | 644.8 us | 10.43 us |  9.24 us |  1.00 |    0.02 |         - |          NA |
-| TestAdderInterface | .NET 9.0 | .NET 9.0 | 1000000   | 747.0 us | 13.90 us | 13.00 us |  1.16 |    0.03 |         - |          NA |
-| TestAdderAbstract  | .NET 9.0 | .NET 9.0 | 1000000   | 710.8 us | 14.19 us | 17.95 us |  1.10 |    0.03 |         - |          NA |
+| Method             | Iteration | Mean     | Error   | StdDev  | Ratio | RatioSD | Allocated | Alloc Ratio |
+|------------------- |---------- |---------:|--------:|--------:|------:|--------:|----------:|------------:|
+| TestAdderDirectly  | 1000000   | 558.7 us | 7.57 us | 7.08 us |  1.00 |    0.02 |         - |          NA |
+| TestAdderInterface | 1000000   | 661.2 us | 0.54 us | 0.45 us |  1.18 |    0.01 |         - |          NA |
+| TestAdderAbstract  | 1000000   | 670.9 us | 5.00 us | 4.43 us |  1.20 |    0.02 |         - |          NA |

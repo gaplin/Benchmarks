@@ -3,8 +3,6 @@
 namespace AbstractVsStructUnions;
 
 [MemoryDiagnoser(false)]
-[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
-[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
 public class Benchmarks
 {
     [Params(1_000_000)]

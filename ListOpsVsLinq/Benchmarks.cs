@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 namespace ListOpsVsLinq;
 
 [MemoryDiagnoser(false)]
-[SimpleJob(RuntimeMoniker.Net80, baseline: true)]
-[SimpleJob(RuntimeMoniker.Net90)]
+[SimpleJob(RuntimeMoniker.Net80)]
+[SimpleJob(RuntimeMoniker.Net10_0, baseline: true)]
 public class Benchmarks
 {
     private List<int> _ints = null!;
@@ -17,7 +17,7 @@ public class Benchmarks
 
     [GlobalSetup]
     public void Setup()
-    {
+    {                                        
         _ints = [.. Enumerable.Range(1, MaxElem)];
         _toFind = MaxElem / 2;
     }

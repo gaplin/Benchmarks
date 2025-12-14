@@ -1,13 +1,13 @@
 ﻿# Results
 
-BenchmarkDotNet v0.14.0, Windows 11 (10.0.26100.3775)\
-12th Gen Intel Core i7-12650H, 1 CPU, 16 logical and 10 physical cores\
-.NET SDK 9.0.203\
-  [Host]     : .NET 9.0.4 (9.0.425.16305), X64 RyuJIT AVX2\
-  DefaultJob : .NET 9.0.4 (9.0.425.16305), X64 RyuJIT AVX2
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7462/25H2/2025Update/HudsonValley2)\
+AMD Ryzen 9 7945HX with Radeon Graphics 2.50GHz, 1 CPU, 32 logical and 16 physical cores\
+.NET SDK 10.0.101\
+  [Host]     : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4\
+  DefaultJob : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4
 
 
-| Method            | Mean     | Error   | StdDev  | Ratio | RatioSD | Allocated | Alloc Ratio |
-|------------------ |---------:|--------:|--------:|------:|--------:|----------:|------------:|
-| ForeachList       | 439.6 us | 4.90 us | 4.58 us |  1.00 |    0.01 |         - |          NA |
-| ForeachEnumerable | 867.4 us | 6.34 us | 5.93 us |  1.97 |    0.02 |      40 B |          NA |
+| Method            | Mean     | Error   | StdDev  | Ratio | Allocated | Alloc Ratio |
+|------------------ |---------:|--------:|--------:|------:|----------:|------------:|
+| ForeachList       | 366.9 us | 4.18 us | 3.91 us |  1.00 |         - |          NA |
+| ForeachEnumerable | 389.8 us | 2.28 us | 2.02 us |  1.06 |         - |          NA |

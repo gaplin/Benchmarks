@@ -1,16 +1,16 @@
 ﻿# Results
 
-BenchmarkDotNet v0.15.2, Windows 11 (10.0.26100.4652/24H2/2024Update/HudsonValley)\
-12th Gen Intel Core i7-12650H 2.30GHz, 1 CPU, 16 logical and 10 physical cores\
-.NET SDK 9.0.302\
-  [Host]     : .NET 9.0.7 (9.0.725.31616), X64 RyuJIT AVX2\
-  DefaultJob : .NET 9.0.7 (9.0.725.31616), X64 RyuJIT AVX2
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7462/25H2/2025Update/HudsonValley2)\
+AMD Ryzen 9 7945HX with Radeon Graphics 2.50GHz, 1 CPU, 32 logical and 16 physical cores\
+.NET SDK 10.0.101\
+  [Host]     : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4\
+  DefaultJob : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4
 
 
-| Method                        | ListSize | Mean      | Error    | StdDev   | Ratio | RatioSD | Allocated | Alloc Ratio |
-|------------------------------ |--------- |----------:|---------:|---------:|------:|--------:|----------:|------------:|
-| SortWithLookupInt             | 1000     | 124.19 us | 1.374 us | 1.285 us |  1.00 |    0.01 |   7.93 KB |        1.00 |
-| SortWithPropertyFillingInt    | 1000     |  35.33 us | 0.432 us | 0.404 us |  0.28 |    0.00 |   7.87 KB |        0.99 |
-|                               |          |           |          |          |       |         |           |             |
-| SortWithLookupString          | 1000     | 356.06 us | 6.848 us | 6.725 us |  1.00 |    0.03 |   7.93 KB |        1.00 |
-| SortWithPropertyFillingString | 1000     |  47.34 us | 0.347 us | 0.290 us |  0.13 |    0.00 |   7.87 KB |        0.99 |
+| Method                        | ListSize | Mean      | Error    | StdDev   | Ratio | Allocated | Alloc Ratio |
+|------------------------------ |--------- |----------:|---------:|---------:|------:|----------:|------------:|
+| SortWithLookupInt             | 1000     |  70.34 us | 0.742 us | 0.694 us |  1.00 |   7.93 KB |        1.00 |
+| SortWithPropertyFillingInt    | 1000     |  27.41 us | 0.541 us | 0.873 us |  0.39 |   7.87 KB |        0.99 |
+|                               |          |           |          |          |       |           |             |
+| SortWithLookupString          | 1000     | 177.58 us | 1.262 us | 1.181 us |  1.00 |   7.93 KB |        1.00 |
+| SortWithPropertyFillingString | 1000     |  31.97 us | 0.633 us | 1.263 us |  0.18 |   7.87 KB |        0.99 |

@@ -6,6 +6,7 @@ namespace ListOpsVsLinq;
 
 [MemoryDiagnoser(false)]
 [SimpleJob(RuntimeMoniker.Net90)]
+[SimpleJob(RuntimeMoniker.Net10_0)]
 public class BenchmarksConst
 {
     private List<int> _ints = null!;

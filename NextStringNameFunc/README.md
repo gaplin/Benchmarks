@@ -1,15 +1,15 @@
 ﻿# Results
 
-BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4460/23H2/2023Update/SunValley3)\
-12th Gen Intel Core i7-12650H, 1 CPU, 16 logical and 10 physical cores\
-.NET SDK 9.0.100\
-  [Host]     : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2\
-  DefaultJob : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7462/25H2/2025Update/HudsonValley2)\
+AMD Ryzen 9 7945HX with Radeon Graphics 2.50GHz, 1 CPU, 32 logical and 16 physical cores\
+.NET SDK 10.0.101\
+  [Host]     : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4\
+  DefaultJob : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4
 
 
-| Method                  | Candidate           | TakenNamesLastNumber | Mean         | Error        | StdDev       | Ratio | RatioSD | Allocated | Alloc Ratio |
-|------------------------ |-------------------- |--------------------- |-------------:|-------------:|-------------:|------:|--------:|----------:|------------:|
-| StringTest              | Firs(...)dddn [135] | 20000                | 862,544.5 us | 16,777.37 us | 22,965.05 us | 1.001 |    0.04 | 6710376 B |       1.000 |
-| StringHashTest          | Firs(...)dddn [135] | 20000                |   2,852.2 us |     45.84 us |     42.88 us | 0.003 |    0.00 | 7130745 B |       1.063 |
-| StringHashTestNewLookup | Firs(...)dddn [135] | 20000                |     822.2 us |     14.95 us |     13.99 us | 0.001 |    0.00 |  421432 B |       0.063 |
-| SpanTest                | Firs(...)dddn [135] | 20000                | 911,242.1 us | 17,998.22 us | 35,944.40 us | 1.057 |    0.05 |     416 B |       0.000 |
+| Method                  | Candidate           | TakenNamesLastNumber | Mean         | Error       | StdDev       | Ratio | RatioSD | Allocated | Alloc Ratio |
+|------------------------ |-------------------- |--------------------- |-------------:|------------:|-------------:|------:|--------:|----------:|------------:|
+| StringTest              | Firs(...)dddn [135] | 20000                | 471,244.2 us | 9,144.88 us | 12,819.84 us | 1.001 |    0.04 | 6709976 B |       1.000 |
+| StringHashTest          | Firs(...)dddn [135] | 20000                |   1,982.6 us |    39.56 us |     43.97 us | 0.004 |    0.00 | 7130995 B |       1.063 |
+| StringHashTestNewLookup | Firs(...)dddn [135] | 20000                |     621.2 us |     1.83 us |      1.52 us | 0.001 |    0.00 |  421408 B |       0.063 |
+| SpanTest                | Firs(...)dddn [135] | 20000                | 493,354.1 us | 3,858.04 us |  3,608.81 us | 1.048 |    0.03 |     304 B |       0.000 |

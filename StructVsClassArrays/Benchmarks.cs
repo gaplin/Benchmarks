@@ -4,8 +4,6 @@ using BenchmarkDotNet.Diagnosers;
 namespace StructVsClassArrays;
 
 [MemoryDiagnoser(false)]
-[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
-[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
 public class Benchmarks
 {
     private struct StrBlob
@@ -33,7 +31,6 @@ public class Benchmarks
     [GlobalSetup]
     public void Setup()
     {
-        Console.WriteLine("SETUP>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         _strArr = new StrBlob[ArrSize];
         _clsArr = new ClsBlob[ArrSize];
         for (int i = 0; i < ArrSize; i++)

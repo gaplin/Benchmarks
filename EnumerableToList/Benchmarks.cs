@@ -3,8 +3,6 @@
 namespace EnumerableToList;
 
 [MemoryDiagnoser(false)]
-[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
-[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
 public class Benchmarks
 {
     private readonly List<int> _items = Enumerable.Range(1, 1_000_000).ToList();

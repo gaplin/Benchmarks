@@ -4,8 +4,6 @@ using BenchmarkDotNet.Attributes;
 namespace Async;
 
 [MemoryDiagnoser(false)]
-[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net90, baseline: true)]
-[SimpleJob(BenchmarkDotNet.Jobs.RuntimeMoniker.Net80)]
 public class Benchmarks
 {
     [Benchmark(Baseline = true)]

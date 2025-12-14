@@ -1,17 +1,17 @@
 ﻿# Results
 
-BenchmarkDotNet v0.14.0, Windows 11 (10.0.26100.2605)\
-12th Gen Intel Core i7-12650H, 1 CPU, 16 logical and 10 physical cores\
-.NET SDK 9.0.101\
-  [Host]     : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2\
-  DefaultJob : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7462/25H2/2025Update/HudsonValley2)\
+AMD Ryzen 9 7945HX with Radeon Graphics 2.50GHz, 1 CPU, 32 logical and 16 physical cores\
+.NET SDK 10.0.101\
+  [Host]     : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4\
+  DefaultJob : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4
 
 
-| Method                | N    | Mean       | Error    | StdDev   | Ratio | RatioSD |
-|---------------------- |----- |-----------:|---------:|---------:|------:|--------:|
-| JaggedArraysNormal    | 1000 | 1,878.0 ms | 24.38 ms | 21.61 ms |  1.00 |    0.02 |
-| JaggedArraysChanged   | 1000 | 1,506.9 ms | 25.23 ms | 22.36 ms |  0.80 |    0.01 |
-| MultiDimArraysNormal  | 1000 | 1,663.2 ms | 30.01 ms | 48.46 ms |  0.89 |    0.03 |
-| MultiDimArraysChanged | 1000 | 1,007.9 ms | 15.39 ms | 14.40 ms |  0.54 |    0.01 |
-| FlatArrayNormal       | 1000 | 1,111.2 ms | 21.74 ms | 21.35 ms |  0.59 |    0.01 |
-| FlatArrayChanged      | 1000 |   827.7 ms | 16.23 ms | 15.94 ms |  0.44 |    0.01 |
+| Method                | N    | Mean       | Error    | StdDev   | Ratio |
+|---------------------- |----- |-----------:|---------:|---------:|------:|
+| JaggedArraysNormal    | 1000 | 1,761.2 ms | 14.02 ms | 13.11 ms |  1.00 |
+| JaggedArraysChanged   | 1000 | 1,521.8 ms | 10.54 ms |  9.86 ms |  0.86 |
+| MultiDimArraysNormal  | 1000 | 1,370.2 ms | 10.34 ms |  9.67 ms |  0.78 |
+| MultiDimArraysChanged | 1000 | 1,019.7 ms |  2.63 ms |  2.19 ms |  0.58 |
+| FlatArrayNormal       | 1000 | 1,100.8 ms |  4.92 ms |  4.10 ms |  0.63 |
+| FlatArrayChanged      | 1000 |   969.7 ms |  1.58 ms |  1.32 ms |  0.55 |

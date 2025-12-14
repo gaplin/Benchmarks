@@ -1,16 +1,13 @@
 ﻿# Results
 
-BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4460/23H2/2023Update/SunValley3)\
-12th Gen Intel Core i7-12650H, 1 CPU, 16 logical and 10 physical cores\
-.NET SDK 9.0.100\
-  [Host]   : .NET 8.0.11 (8.0.1124.51707), X64 RyuJIT AVX2\
-  .NET 8.0 : .NET 8.0.11 (8.0.1124.51707), X64 RyuJIT AVX2\
-  .NET 9.0 : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7462/25H2/2025Update/HudsonValley2)\
+AMD Ryzen 9 7945HX with Radeon Graphics 2.50GHz, 1 CPU, 32 logical and 16 physical cores\
+.NET SDK 10.0.101\
+  [Host]     : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4\
+  DefaultJob : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4
 
 
-| Method        | Job      | Runtime  | Mean     | Error     | StdDev    | Ratio | RatioSD | Allocated | Alloc Ratio |
-|-------------- |--------- |--------- |---------:|----------:|----------:|------:|--------:|----------:|------------:|
-| Lambda        | .NET 8.0 | .NET 8.0 | 6.676 ms | 0.1305 ms | 0.1450 ms |  1.65 |    0.06 |     579 B |        1.00 |
-| LocalFunction | .NET 8.0 | .NET 8.0 | 4.576 ms | 0.0898 ms | 0.1642 ms |  1.13 |    0.05 |     579 B |        1.00 |
-| Lambda        | .NET 9.0 | .NET 9.0 | 4.051 ms | 0.0798 ms | 0.1093 ms |  1.00 |    0.04 |     579 B |        1.00 |
-| LocalFunction | .NET 9.0 | .NET 9.0 | 4.746 ms | 0.0936 ms | 0.0875 ms |  1.17 |    0.04 |     577 B |        1.00 |
+| Method        | Mean     | Error     | StdDev    | Ratio | Allocated | Alloc Ratio |
+|-------------- |---------:|----------:|----------:|------:|----------:|------------:|
+| Lambda        | 4.091 ms | 0.0375 ms | 0.0351 ms |  1.00 |     576 B |        1.00 |
+| LocalFunction | 4.013 ms | 0.0286 ms | 0.0239 ms |  0.98 |     576 B |        1.00 |
