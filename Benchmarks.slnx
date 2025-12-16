@@ -27,5 +27,6 @@
   <Project Path="SortWithLookupVsProperty/SortWithLookupVsProperty.csproj" Id="74524c25-d7da-41af-b716-b332ebd70314" />
   <Project Path="StructVsClassArrays/StructVsClassArrays.csproj" />
   <Project Path="Virtual/Virtual.csproj" />
+  <Project Path="Visitor/Visitor.csproj" Id="f8733fb7-679e-4b34-9d9a-61916c14d96b" />
   <Project Path="ZlinqVsLinq/ZlinqVsLinq.csproj" />
 </Solution>
