@@ -7,10 +7,12 @@ AMD Ryzen 9 7945HX with Radeon Graphics 2.50GHz, 1 CPU, 32 logical and 16 physic
   DefaultJob : .NET 10.0.1 (10.0.1, 10.0.125.57005), X64 RyuJIT x86-64-v4
 
 
-| Method     | ArrSize | Mean         | Error       | StdDev      | Ratio | Allocated | Alloc Ratio |
-|----------- |-------- |-------------:|------------:|------------:|------:|----------:|------------:|
-| TestClass  | 1000    |     425.1 ns |     3.19 ns |     2.98 ns |  1.00 |         - |          NA |
-| TestStruct | 1000    |     399.5 ns |     0.39 ns |     0.35 ns |  0.94 |         - |          NA |
-|            |         |              |             |             |       |           |             |
-| TestClass  | 1000000 | 591,601.2 ns | 1,430.63 ns | 1,268.21 ns |  1.00 |         - |          NA |
-| TestStruct | 1000000 | 413,740.3 ns | 1,651.29 ns | 1,544.62 ns |  0.70 |         - |          NA |
+| Method             | ArrSize | Mean         | Error       | StdDev      | Ratio | Allocated | Alloc Ratio |
+|------------------- |-------- |-------------:|------------:|------------:|------:|----------:|------------:|
+| TestClass          | 1000    |     643.0 ns |     5.24 ns |     4.64 ns |  1.00 |         - |          NA |
+| TestStruct         | 1000    |     645.8 ns |     8.34 ns |     7.80 ns |  1.00 |         - |          NA |
+| TestStructOfArrays | 1000    |     719.1 ns |     4.55 ns |     4.03 ns |  1.12 |         - |          NA |
+|                    |         |              |             |             |       |           |             |
+| TestClass          | 1000000 | 882,346.9 ns | 6,850.75 ns | 5,720.69 ns |  1.00 |         - |          NA |
+| TestStruct         | 1000000 | 676,211.6 ns | 1,340.46 ns | 1,046.54 ns |  0.77 |         - |          NA |
+| TestStructOfArrays | 1000000 | 743,414.4 ns | 5,591.43 ns | 5,230.22 ns |  0.84 |         - |          NA |
