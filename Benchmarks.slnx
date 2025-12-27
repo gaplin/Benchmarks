@@ -12,6 +12,7 @@
   <Project Path="EnumerableToList/EnumerableToList.csproj" />
   <Project Path="Forwarding/Forwading.csproj" />
   <Project Path="Iteration/Iteration.csproj" />
+  <Project Path="JsonOps/JsonOps.csproj" Id="ef2b1f68-526e-4bb2-949f-422f63d74744" />
   <Project Path="LambdaVsLocalFunction/LambdaVsLocalFunction.csproj" />
   <Project Path="LinqChaining/LinqChaining.csproj" Id="765c4b7a-fa6e-42a2-9d56-725504fc919e" />
   <Project Path="ListArrayInit/ListArrayInit.csproj" />
