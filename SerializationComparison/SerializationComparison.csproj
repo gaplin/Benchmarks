@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.15.8" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-    <PackageReference Include="protobuf-net" Version="3.4.21" />
+    <PackageReference Include="protobuf-net" Version="3.4.30" />
   </ItemGroup>
 
 </Project>
